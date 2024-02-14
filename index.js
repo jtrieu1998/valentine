@@ -1,4 +1,7 @@
 let yb = document.getElementById("yes_button")
+let nb = document.getElementById("no_button")
+let preR = document.getElementById("pre_response")
+let postR = document.getElementById("post_response")
 let inc = 5
 
 noClicked = () => {
@@ -8,7 +11,10 @@ noClicked = () => {
 }
 
 yesClicked = () => {
-
+  animate();
+  animate();
+  preR.style.display = "none"
+  postR.style.display = "inline"
 }
 
 var container = document.getElementById('animate');
@@ -16,14 +22,14 @@ var emoji = ['❤️','🤎','💘','💓','💗','💖','😻','💞','🤍','�
 var circles = [];
 
 for (var i = 0; i < 15; i++) {
-  addCircle(i * 150, [10 + 0, 300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 + 0, -300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 - 200, -300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 + 200, 300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 - 400, -300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 + 400, 300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 - 600, -300], emoji[Math.floor(Math.random() * emoji.length)]);
-  addCircle(i * 150, [10 + 600, 300], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 + 0, 900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 + 0, -900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 - 200, -900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 + 200, 900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 - 400, -900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 + 400, 900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 - 600, -900], emoji[Math.floor(Math.random() * emoji.length)]);
+  addCircle(i * 100, [10 + 600, 900], emoji[Math.floor(Math.random() * emoji.length)]);
 }
 
 
@@ -75,4 +81,3 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-animate();

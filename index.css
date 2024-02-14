@@ -1,10 +1,14 @@
-h3 {
-  font-family: 'Calibri';
+h1 {
+  font-family: 'Roboto';
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
+}
+
+#post_response {
+  display: none;
 }
 
 .buttons {
@@ -35,4 +39,26 @@ h3 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+#snoopy_ask {
+  position: absolute;
+  top: 37.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 240px;
+  height: 180px;
+}
+
+#snoopy_response {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+body {
+  background-color: #f5837d;
 }
